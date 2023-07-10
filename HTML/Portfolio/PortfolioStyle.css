@@ -15,10 +15,10 @@ header#Main{
     display:flex;
 }
 .element{
-    width:49%;
+    width:48%;
 }
 .space{
-    width: 2%;
+    width: 4%;
 }
 .element.right{
     text-align: right;
@@ -28,7 +28,6 @@ header#Main{
     text-align: left;
 }
 #pfp{
-    position: relative;
     border-radius: 100%;
     height: 90%;
     margin-top:5%;
