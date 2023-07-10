@@ -5,30 +5,43 @@ body{
     margin: 0%;
     padding: 0%;
 }
+header#Main{
+    background-color: gray;
+}
+.container{
+    margin: 3% 7% 3% 7%;
+    height: 75vh;
+    width: 86%;
+    display:flex;
+}
+.element{
+    width:49%;
+}
+.space{
+    width: 2%;
+}
+.element.right{
+    text-align: right;
+    margin:auto;
+}
+.element.left{
+    text-align: left;
+}
 #pfp{
     position: relative;
     border-radius: 100%;
-    height: 100%;
+    height: 90%;
+    margin-top:5%;
+    margin-bottom:5%;
 }
 #name{
     font-size: 350%;
     text-align: right;
 }
-.container{
-    margin: 3% 7% 3% 7%;
-    height: 75vh;
-    display:flex;
+nav{
+    height: 5vh;
+    text-align: center;
 }
-.element{
-    margin:auto;
-    width:49%;
-}
-.right{
-    text-align: right;
-}
-.space{
-    width: 2%;
-}
-.left{
-    text-align: left;
+.headerContent{
+    margin: auto;
 }
