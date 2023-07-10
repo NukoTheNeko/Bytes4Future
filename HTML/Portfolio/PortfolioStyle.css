@@ -55,7 +55,7 @@ nav{
     height: 30vh;
 }
 #projects img{
-    display: block;
+    display: blockgit;
     border-radius: 10px;
     object-fit: cover;
     width: 100%;
