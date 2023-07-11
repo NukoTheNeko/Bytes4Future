@@ -1,0 +1,104 @@
+body{
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:30px;
+    background-color:rgb(74, 73, 84);
+    color: rgb(145, 104, 79);
+    text-shadow: 1px 1px 2px rgb(59, 40, 29);
+}
+.content{
+    margin:0% 22% 0% 22%;
+    padding:2% 3% 2% 3%;
+    background-color:rgb(50, 50, 57);
+    width:50%;
+}
+.pizzaTitle{
+    padding:0%;
+    margin:0%;
+    margin-bottom: 3%;
+    font-size:300%;
+}
+.imgContainer{
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    margin: 5% 0% 5% 0%;
+}
+.pizzaImage{
+    position: absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    transform: translate(-50%,0%);
+}
+.tiny{
+    font-size: 10%;
+    padding:0%;
+    margin:0%;
+}
+.warning{
+    position: relative;
+    right: 0%;
+    padding: 0% 5% 2% 0%;
+    font-size: 30%;
+}
+#mainPage{
+    position: fixed;
+    height:45vh;
+}
+#banner{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height:55vh;
+}
+#bannerTitle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 500%;
+    color:rgb(108, 73, 54);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(59, 40, 29);
+    text-shadow: 0px 0px 20px rgb(152, 115, 94);
+    padding:0%;
+    margin:0%;
+}
+#bannerImg{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.noBullets{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menuList{
+    font-size: 200%;
+}
+.mainPageList{
+    font-size: 300%;
+}
+a{
+    text-decoration: none;
+}
+a:link, a:visited{
+    color: rgb(117, 78, 56);
+}
+a:hover{
+    color: rgb(145, 101, 75);
+}
+a:active{
+    color: rgb(92, 58, 38);
+}
+.imgBorder{
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 20px;
+    border-color: rgb(92, 58, 38);
+    box-shadow: 0px 0px 20px rgb(119, 74, 49);
+}
