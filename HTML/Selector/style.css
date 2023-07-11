@@ -1,0 +1,20 @@
+
+li:nth-child(even){
+    background-color: lightskyblue;
+}
+li:last-child{
+    background-color:lightgreen;
+}
+li:first-child{
+    background-color:lightcoral;
+}
+ul li{
+    background-color: lightgoldenrodyellow;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+body{
+    color:rgb(56, 56, 56)
+}
