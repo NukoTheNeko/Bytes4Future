@@ -76,11 +76,16 @@ header#Main{
     padding: 1.5vh 0 1.5vh 0;
     color:black;
     font-size: 140%;
-    background-color: brown;
+    background: red;
+    -webkit-box-shadow: inset 0 0 8 0px 70px lavender;
+    box-shadow: inset 0 0 80px 70px lavender;
 }
 #mainNav a:default{
 }
 #mainNav a:hover{
+    background-color: rgba(100,100,100,1);
+    -webkit-box-shadow: inset 0 0 40px 20px rgba(0,0,0,0);
+    box-shadow: inset 0 0 40px 20px rgba(0,0,0,0);
 }
 #mainNav a:visited{
 }
