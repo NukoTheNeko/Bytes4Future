@@ -19,7 +19,7 @@ header {
   e também verticalmente.
    */
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
   background: tomato;
   /*Padding de 30 pixeis */
@@ -63,7 +63,7 @@ section {
   /*Metam a direção em coluna
   Depois, centralizem verticalmente*/
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .hero-title {
