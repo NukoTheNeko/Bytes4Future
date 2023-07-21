@@ -9,7 +9,7 @@
     <body>
         <header id="Main">
             <nav>
-                <div class="content" id="mainNav">
+                <div id="mainNav">
                     <a class="cell" href="#AboutMe">About Me</a>
                     <a class="cell" href="#MyProjects">My Projects</a>
                     <a class="cell" href="#Portfolio">Portfolio</a>
@@ -30,27 +30,32 @@
         <main class="content">
             <section id="AboutMe">
                 <h3>About Me</h3>
-                <p>Text about me</p>
+                <div style="overflow: auto;">
+                    <figure id="first-game">
+                        <img src="imgs/scratch.jpeg">
+                        <figcaption>My first game using scratch</figcaption>
+                    </figure>
+                    <p>Hello! Thank you for visiting my website! My name is Henrique Tavares da Palma and I'm a Junior Game Developer with a passion for all things programming.
+                        I was born in 1998 and ever since I turned 13 years old I've been developing video games.
+                        I am a diligent and motivated developer always looking to learn something new be it related to game development or otherwise.
+                    </p>
+                </div>
             </section>
             <section id="MyProjects">
                 <h3>My Projects</h3>
-                <table id="projects">
-                    <tr>
-                        <td><a href="https://ricardo-palma.itch.io/maria-das-flores" target="_blank"><img src="imgs/maria.png" alt="Maria das Flores Logo"/></a></td>
-                        <td><a href="https://eclecticcode.itch.io/flower-in-the-sky" target="_blank"><img src="imgs/flower.png" alt="Flower in the Sky Logo"/></a></td>
-                        <td><a href="https://kagamihara.itch.io/need-4-pit" target="_blank"><img src="imgs/nfp.png" alt="Need 4 Pit Logo"/></a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://kagamihara.itch.io/carcade-champions" target="_blank"><img src="imgs/carcade.png" alt="Carcade Champions Logo"/></a></td>
-                        <td><a href="https://mateusboga.itch.io/dogs-got-talent" target="_blank"><img src="imgs/dogs.png" alt="Dogs Got Talent Logo"/></a></td>
-                        <td><a href="https://kagamihara.itch.io/marvila-runner" target="_blank"><img src="imgs/marvila.png" alt="Marvila Runner Logo"/></a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://kagamihara.itch.io/wealderin" target="_blank"><img src="imgs/wealderin.png" alt="Wealderin Logo"/></a></td>
-                        <td><a href="https://kagamihara.itch.io/casa" target="_blank"><img src="imgs/casa.png" alt="Casa Logo"/></a></td>
-                        <td><a href="https://www.kongregate.com/games/NitroplasmaSX/pith-demo" target="_blank"><img src="imgs/pith.png" alt="Pith Logo"/></a></td>
-                    </tr>
-                </table>
+                <div id="projects">
+                    <a class ="project" href="https://ricardo-palma.itch.io/maria-das-flores" target="_blank"><img src="imgs/maria.png" alt="Maria das Flores Logo"/></a>
+                    <a class ="project" href="https://eclecticcode.itch.io/flower-in-the-sky" target="_blank"><img src="imgs/flower.png" alt="Flower in the Sky Logo"/></a>
+                    <a class ="project" href="https://kagamihara.itch.io/need-4-pit" target="_blank"><img src="imgs/nfp.png" alt="Need 4 Pit Logo"/></a>
+
+                    <a class ="project" href="https://kagamihara.itch.io/carcade-champions" target="_blank"><img src="imgs/carcade.png" alt="Carcade Champions Logo"/></a>
+                    <a class ="project" href="https://mateusboga.itch.io/dogs-got-talent" target="_blank"><img src="imgs/dogs.png" alt="Dogs Got Talent Logo"/></a>
+                    <a class ="project" href="https://kagamihara.itch.io/marvila-runner" target="_blank"><img src="imgs/marvila.png" alt="Marvila Runner Logo"/></a>
+
+                    <a class ="project" href="https://kagamihara.itch.io/wealderin" target="_blank"><img src="imgs/wealderin.png" alt="Wealderin Logo"/></a>
+                    <a class ="project" href="https://kagamihara.itch.io/casa" target="_blank"><img src="imgs/casa.png" alt="Casa Logo"/></a>
+                    <a class ="project" href="https://www.kongregate.com/games/NitroplasmaSX/pith-demo" target="_blank"><img src="imgs/pith.png" alt="Pith Logo"/></a>
+                </div>
             </section>
             <section id="Portfolio">
                 <h3>Portfolio</h3>
@@ -60,7 +65,7 @@
                 <h3>Contacts</h3>
                 <p>Email: henriquetavaresdapalma@gmail.com</p>
                 <p>Cellphone: 937670882</p>
-                <p>LinkedIn: coming soon</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/kagamihara/" target="_blank">Henrique Palma</a></p>
             </section>
         </main>
     </body>
