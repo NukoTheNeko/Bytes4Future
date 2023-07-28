@@ -5,4 +5,3 @@ let cat = 3
 }
 console.log(cat)
 console.log(dog)
-console.log(cat)
