@@ -6,6 +6,8 @@
 // console.log(cat)
 // console.log(dog)
 
+console.log("Fibonacci");
+
 function Fibonacci(iter) 
 {
 	if (iter <= 1) 
@@ -152,3 +154,70 @@ console.log(seven(0));
 console.log(seven(11));
 console.log(seven("a"));
 console.log(seven(7));
+
+console.log("weekdays")
+
+function weekDays(day)
+{
+	switch (day)
+	{
+		case 1:
+			console.log("monday");
+			break;
+		case 2:
+			console.log("tuesday");
+			break;
+		case 3:
+			console.log("wednesday");
+			break;
+		case 4:
+			console.log("thursday");
+			break;
+		case 5:
+			console.log("friday");
+			break;
+		case 6:
+			console.log("saturday");
+			break;
+		case 7:
+			console.log("sunday");
+			break;
+		default:
+			console.log("invalid day of the week");
+	}
+}
+for (let i = 0; i <= 8; i++) 
+{
+	weekDays(i);
+}
+
+console.log("Recursive");
+
+function recursive(number)
+{
+	console.log(number);
+	if (number == 0 || isNaN(number))
+	{
+		return;
+	}
+	recursive(number - 1);
+	console.log(number);
+}
+recursive(10);
+
+console.log("i++");
+
+let i = 0;
+while(i < 5)
+{
+	console.log(i++);
+}
+
+console.log("++i");
+
+i = 0;
+while(i < 5)
+{
+	console.log(++i);
+}
+
