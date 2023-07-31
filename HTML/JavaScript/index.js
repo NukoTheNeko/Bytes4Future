@@ -6,9 +6,13 @@
 // console.log(cat)
 // console.log(dog)
 
+<<<<<<< Updated upstream
 console.log("Fibonacci");
 
 function Fibonacci(iter) 
+=======
+/*function Fibonacci(iter)
+>>>>>>> Stashed changes
 {
 	if (iter <= 1) 
 	{
@@ -203,6 +207,7 @@ function recursive(number)
 	recursive(number - 1);
 	console.log(number);
 }
+<<<<<<< Updated upstream
 recursive(10);
 
 console.log("i++");
@@ -221,3 +226,13 @@ while(i < 5)
 	console.log(++i);
 }
 
+=======
+console.log();*/
+
+function cont()
+{
+    let variable = Math.floor(7.3);
+    return "olá" + variable;
+}
+console.log(cont());
+>>>>>>> Stashed changes
