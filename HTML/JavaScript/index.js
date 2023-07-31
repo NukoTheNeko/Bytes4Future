@@ -6,18 +6,149 @@
 // console.log(cat)
 // console.log(dog)
 
-function Fibonacci(iter)
+function Fibonacci(iter) 
 {
-    let number;
-    if(iter <= 1)
-    {
-        return iter;
-    }
-    return Fibonacci(iter - 1) + Fibonacci(iter - 2);
+	if (iter <= 1) 
+	{
+		return iter;
+	}
+	return Fibonacci(iter - 1) + Fibonacci(iter - 2);
 }
 
 for (let i = 1; i <= 10; i++) 
 {
-    process.stdout.write(Fibonacci(i) + " ");
+	process.stdout.write(Fibonacci(i) + " ");
 }
-console.log();
+
+console.log("\nxor");
+
+function xor(a, b)
+{
+	return((a || b) && !(a && b));
+}
+console.log(xor(true, false));
+console.log(xor(true, true));
+console.log(xor(false, false));
+console.log(xor(false, true));
+
+console.log("txor");
+
+function txor(a, b, c)
+{
+	return(xor(a,b) && xor(a,c) && xor(b,c));
+}
+console.log(txor(true,true,false));
+console.log(txor(true,true,true));
+console.log(txor(true,false,false));
+
+console.log("neitherTrue");
+
+function neitherTrue(a, b)
+{
+	return (!a || !b);
+}
+console.log(neitherTrue(true, true));
+console.log(neitherTrue(true, false));
+console.log(neitherTrue(false, false));
+console.log(neitherTrue(false, true));
+
+console.log("perimeter");
+
+function perimeter(side)
+{
+	return side * 4;
+}
+console.log(perimeter(10));
+
+console.log("area")
+
+function area(side)
+{
+	return side ** 2;
+}
+console.log(area(3));
+
+console.log("volume")
+
+function volume(side)
+{
+	return side ** 3;
+}
+console.log(volume(3));
+
+console.log("bigInt");
+
+function bigInt()
+{
+	return 10n**3000n;
+}
+console.log(bigInt());
+
+console.log("bigIntN");
+
+function bigIntN(x,n)
+{
+	return BigInt(x)**BigInt(n);
+}
+console.log(bigIntN(10,2000));
+
+console.log("line between");
+
+function lineBetween(word1,word2)
+{
+	return word1 + "\n" + word2;
+}
+console.log(lineBetween("oi","potato"));
+
+console.log("another line between");
+
+function lineBetween2(word1,word2)
+{
+	return `My name is ${word1} and I'm ${word2} years old`;
+}
+console.log(lineBetween2("Henrique","25"));
+
+console.log("compare")
+
+function compare(var1,var2)
+{
+	return Number(var1) > Number(var2) ? var1: var2;
+}
+console.log(compare(3,6));
+console.log(compare(11,7));
+
+console.log("compareString");
+
+function compareString(var1,var2)
+{
+	return String(var1) > String(var2) ? var1: var2;
+}
+console.log(compareString(3,6));
+console.log(compareString(11,7));
+
+console.log("oddEvenSeven");
+
+function seven(num)
+{
+	if (isNaN(num))
+	{
+		return "erro";
+	}
+	else if(num === 7)
+	{
+		return "7";
+	}
+	else if(num % 2 === 0)
+	{
+		return "even";
+	}
+	else if(num % 2 !== 0)
+	{
+		return "odd";
+	}
+}
+console.log(seven(12));
+console.log(seven(0));
+console.log(seven(11));
+console.log(seven("a"));
+console.log(seven(7));
