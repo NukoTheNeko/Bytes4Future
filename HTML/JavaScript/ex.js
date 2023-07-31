@@ -11,7 +11,7 @@ function length(string, n)
 		console.log(string + " ".repeat(n-string.length))
 	}
 }
-length("gato",6);
+length("gato",4);
 
 console.log("Age Range")
 
