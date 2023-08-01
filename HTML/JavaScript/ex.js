@@ -1,4 +1,4 @@
-console.log("StrLen 1")
+console.log("StrLen 1");
 
 function length(string, n)
 {
@@ -8,12 +8,12 @@ function length(string, n)
 	}
 	else
 	{
-		console.log(string + " ".repeat(n-string.length))
+		console.log(string + " ".repeat(n-string.length));
 	}
 }
 length("gato",4);
 
-console.log("Age Range")
+console.log("Age Range");
 
 function ageRange(age)
 {
@@ -33,11 +33,11 @@ function ageRange(age)
 	{
 		return "Teen";
 	}
-	return "Invalid"
+	return "Invalid";
 }
 for (let i = 0; i <= 18; i++) 
 {
-	console.log(ageRange(i))
+	console.log(ageRange(i));
 }
 
 console.log("Months 1");
@@ -76,45 +76,60 @@ function months(month)
 }
 for (let i = 1; i <= 13; i++) 
 {
-	console.log(months(i))
+	console.log(months(i));
 }
 
 console.log("Months 2");
-
+let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 function months2(month)
 {
-	month = month.toLowerCase();
+	if (month < 1 || month > 12)
+	{
+		return "Invalid";
+	}
+	return monthNames[month-1];
+}
+for (let i = 1; i < 14; i++) 
+{
+	console.log(months2(i));
+}
+
+console.log("Months 3");
+
+function months3(month)
+{
+	let lMonth = month.toLowerCase();
 	switch (true) 
 	{
-		case "january".startsWith(month):
+		case "january".startsWith(lMonth):
 			return "January";
-		case "february".startsWith(month):
+		case "february".startsWith(lMonth):
 			return "February";
-		case "march".startsWith(month):
+		case "march".startsWith(lMonth):
 			return "March";
-		case "april".startsWith(month):
+		case "april".startsWith(lMonth):
 			return "April";
-		case "may".startsWith(month):
+		case "may".startsWith(lMonth):
 			return "May";
-		case "june".startsWith(month):
+		case "june".startsWith(lMonth):
 			return "June";
-		case "july".startsWith(month):
+		case "july".startsWith(lMonth):
 			return "July";
-		case "august".startsWith(month):
+		case "august".startsWith(lMonth):
 			return "August";
-		case "september".startsWith(month):
+		case "september".startsWith(lMonth):
 			return "September";
-		case "october".startsWith(month):
+		case "october".startsWith(lMonth):
 			return "October";
-		case "november".startsWith(month):
+		case "november".startsWith(lMonth):
 			return "November";
-		case "december".startsWith(month):
+		case "december".startsWith(lMonth):
 			return "December";
 		default:
 			return "invalid";
 	}
 }
-console.log(months2("Dec"));
+console.log(months3("Dec"));
 
 console.log("Mario 1");
 
