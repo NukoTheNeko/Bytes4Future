@@ -80,6 +80,11 @@ console.log(
 console.log("Ex 5");
 function getLastN(array,n)
 {
+	if(array.length < n)
+	{
+		return "The value of n can't be higher than the length of the array."
+	}
 	return array.slice(array.length - n, array.length);
 }
 console.log(getLastN(["a", "b", "c", "a", "e", "b"],3));
+console.log(getLastN(["a", "b", "c", "a", "e", "b"],7));
