@@ -21,7 +21,7 @@ console.log(CalculatePoints(3, 2, 3));
 console.log("Ex 3");
 function IsSquare(num, square)
 {
-    return (num ** 2 == square);
+    return (num ** 2 === square);
 }
 console.log(IsSquare(3,9));
 
@@ -30,11 +30,11 @@ console.log(IsSquare(3,9));
 console.log("Ex 4");
 function CountLeterI(string)
 {
-    sentence = string.toLowerCase();
+    let sentence = string.toLowerCase();
     let count = 0;
     for (let char of sentence)
     {
-        if (char == "i")
+        if (char === "i")
         {
             count++;
         }
@@ -53,9 +53,10 @@ function Space(string)
     {
         sentence += char + " ";
     }
+	sentence = sentence.slice(0, sentence.length - 1);
     return sentence;
 }
-console.log(Space("Habibi"));
+console.log(`\"&{Space("Habibi")}\"`);
 
 //Ex 6
 
@@ -68,7 +69,7 @@ function MeasurePH(ph)
     }
     if (ph < 3)
     {
-        return "Veru Acid";
+        return "Very Acid";
     }
     if (ph < 7)
     {
@@ -82,10 +83,7 @@ function MeasurePH(ph)
     {
         return "Basic";
     }
-    else
-    {
-        return "Very Basic";
-    }
+    return "Very Basic";
 }
 for (let i = -1; i <= 15; i++) 
 {
