@@ -319,3 +319,120 @@ function FindNeedle(array)
 }
 console.log(FindNeedle(["feno", "feno", "feno", "feno", "feno", "agulha", "feno"]));
 console.log(FindNeedle(["feno", "agulha", "feno", "feno"]));
+
+//Ex 18
+
+console.log("Ex 18");
+function calculateAverage(array)
+{
+	return array.reduce((sump, digit) => {return sump += Number(digit);})/array.length;
+}
+console.log(calculateAverage([1,1,1]));
+console.log(calculateAverage([1,2,3]));
+console.log(calculateAverage([1,2,3,4]));
+
+//Ex 19
+
+console.log("Ex 19");
+function Mario(height)
+{
+	let tower = new Array;
+	for(let i = 1; i <= height; i++)
+	{
+		let line = " ".repeat(height - i) + "*".repeat((i * 2) - 1)
+		tower.push(line);
+	}
+	return tower;
+}
+console.log(Mario(3));
+console.log(Mario(6));
+console.log(Mario(11));
+
+//Ex 20
+
+console.log("Ex 20");
+function calcTrip(distance, consumption, fuel)
+{
+	return distance <= consumption * fuel;
+}
+console.log(calcTrip(20, 50, 2));
+console.log(calcTrip(50, 25 ,2));
+console.log(calcTrip(100, 50, 1));
+
+//Ex 21
+
+console.log("Ex 21");
+function translateDNA(sequence)
+{
+	return sequence.replace(/[T]/gi, "U");
+}
+console.log(translateDNA("TTTT"));
+console.log(translateDNA("GCAT"));
+console.log(translateDNA("GACCGCCGCC"));
+
+//Ex 22
+
+console.log("Ex 22");
+function RPS(plays)
+{
+	switch(plays[0])
+	{
+		case "pedra":
+			switch(plays[1])
+			{
+				case "pedra":
+					return "Tie!";
+				case "papel":
+					return "P2 Wins!";
+				case "tesoura":
+					return "P1 Wins!";
+				default:
+					return "Not a Valid P2 Move";
+			}
+		case "papel":
+			switch(plays[1])
+			{
+				case "pedra":
+					return "P1 Wins!";
+				case "papel":
+					return "Tie!";
+				case "tesoura":
+					return "P2 Wins!";
+				default:
+					return "Not a Valid P2 Move";
+			}
+		case "tesoura":
+			switch(plays[1])
+			{
+				case "pedra":
+					return "P2 Wins!";
+				case "papel":
+					return "P1 Wins!";
+				case "tesoura":
+					return "Tie!";
+				default:
+					return "Not a Valid P2 Move";
+			}
+		default:
+			return "Not a Valid P2 Move";
+	}
+}
+console.log(RPS(["papel", "pedra"]));
+console.log(RPS(["papel", "tesoura"]));
+console.log(RPS(["papel", "papel"]));
+
+//Ex 23
+
+console.log("Ex 23");
+function ConvertCamelCase(sentence)
+{
+	let words = sentence.toLowerCase().split(" ");
+	for (let i = 1; i < words.length; i++)
+	{
+		words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+	}
+	return words.join("");
+}
+console.log(ConvertCamelCase("Exemplo"));
+console.log(ConvertCamelCase("Um exemplo Com mais palavras"));
+console.log(ConvertCamelCase("Um camelo ou um dormedario"));
