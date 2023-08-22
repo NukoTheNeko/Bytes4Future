@@ -66,15 +66,21 @@
             <section id="Contacts">
                 <h4>Write me an Email:</h4>
                 <form class="emailform" action="mailto:henriquetavaresdapalma@gmail.com" method="post" enctype="text/plain">
-                    <label for="femail">Email:</label>
-                    <input type="email" id="femail" name="femail" placeholder="Your email..." required>
-                    <label for="ftitle">Title:</label>
-                    <input type="text" id="ftitle" name="ftitle" placeholder="Message title..." required>
-                    <label for="fbody">Body:</label>
-                    <textarea id="fbody" name="fbody" cols="30" placeholder="Message body..." required></textarea>
+                    <div>
+                        <label for="femail">Email:</label>
+                        <input type="email" id="femail" name="femail" placeholder="Your email..." required>
+                    </div>
+                    <div>
+                        <label for="ftitle">Title:</label>
+                        <input type="text" id="ftitle" name="ftitle" placeholder="Message title..." required>
+                    </div>
+                    <div>
+                        <label for="fbody">Body:</label>
+                        <textarea id="fbody" name="fbody" cols="30" placeholder="Message body..." required></textarea>
+                    </div>
                     <div class="formbuttons">
-                        <input type="submit" value="Send Email">
-                        <input type="reset" value="Clear">
+                        <button>Send Email</button>
+                        <button>Clear</button>
                     </div>
                 </form>
                 <h3>Contacts</h3>
