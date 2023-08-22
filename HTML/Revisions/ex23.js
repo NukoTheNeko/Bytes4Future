@@ -1,7 +1,7 @@
 function Palindrome(string)
 {
 	string = string.toLowerCase();
-	reversedString = string.split("").reverse().join("");
+	let reversedString = string.split("").reverse().join("");
 	return string === reversedString ? true : false;
 }
 
