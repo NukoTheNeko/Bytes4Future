@@ -1,0 +1,97 @@
+*{
+	margin: 0%;
+	padding: 0%;
+}
+
+.schedule .lunch{
+	background-color: beige;
+}
+.schedule{
+	text-align: center;
+	font-size: 30px;
+	border-spacing: 0px;
+}
+.schedule table, .schedule td, .schedule th{
+	border-style: solid;
+	border-width: 1px;
+	border-spacing: 0px;
+}
+.schedule th{
+	background-color: grey;
+}
+
+
+
+.imageContainer{
+	width: 620px;
+}
+.imageContainer img{
+	width:300px;
+	height:300px;
+}
+.imageContainer .leftImage{
+	float:left;
+}
+.imageContainer .rightImage{
+	float:right;
+}
+
+
+
+.bigSquare{
+	width: 500px;
+	height: 500px;
+	background-color: brown;
+	position: relative;
+}
+.smallSquare{
+	width: 200px;
+	height: 50px;
+	background-color: blue;
+	position: absolute;
+	right:0px;
+	margin: 10px;
+}
+
+
+
+.footer{
+	position: fixed;
+	bottom: 0px;
+	height: 300px;
+	width: 100%;
+	background-color: blanchedalmond;
+}
+
+
+
+.header{
+	width: 100%;
+	display: flex;
+}
+.header .logo{
+	width: 30%;
+}
+.header .navLink{
+	width: 70%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+
+
+.reelContainer{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: stretch;
+}
+.reelContainer .reelElement{
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	padding: 15px;
+}
+.reelContainer .reelElement .reelImage{
+	width: 100%;
+}
