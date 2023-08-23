@@ -44,27 +44,28 @@ function findWord(grid, word)
 	{
 		for (let letter = 0; letter < grid[row].length; letter++)
 		{
-			if (grid[row][letter] === word[0])
+			if (grid[row][letter] !== word[0])
 			{
-				for(let i = -1; i <= 1; i++)
+				continue;
+			}
+			for(let i = -1; i <= 1; i++)
+			{
+				for(let j = -1; j <= 1; j++)
 				{
-					for(let j = -1; j <= 1; j++)
+					let compare = new Array()
+					for(k = 0; k < length; k++)
 					{
-						let compare = new Array()
-						for(k = 0; k < length; k++)
+						if(row + (i * k) < 0 || row + (i * k) >= length || letter + (j * k) < 0 || letter + (j * k) >= length)
 						{
-							if(row + (i * k) < 0 || row + (i * k) >= length || letter + (j * k) < 0 || letter + (j * k) >= length)
-							{
-								break;
-							}
-							compare.push(grid[row + (i * k)][letter + (j * k)])
+							break;
 						}
-						if (compare.join("") === word)
-						{
-							return true;
-						}
-					}	
-				}
+						compare.push(grid[row + (i * k)][letter + (j * k)])
+					}
+					if (compare.join("") === word)
+					{
+						return true;
+					}
+				}	
 			}
 		}
 	}
