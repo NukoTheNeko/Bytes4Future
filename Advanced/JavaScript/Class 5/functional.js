@@ -42,3 +42,25 @@ function allPair(arr)
 console.log(allPair([2,4,6]));
 console.log(allPair([2,4,6,1]));
 
+function sumPair(arr)
+{
+    return arr.some((x) => x % 2 === 0);
+}
+console.log(sumPair([3,1,7]));
+console.log(sumPair([2,1,1,1]));
+
+function mapOc(arr)
+{
+    return arr.reduce((acc, ele) => acc.set(ele, (acc.get(ele) ?? 0) + 1),new Map())
+}
+console.log(mapOc([2,1,1,1]));
+
+class Dog
+{
+    constructor(name)
+    {
+        this.name = name
+    }
+}
+let dog = new Dog("Pierre")
+console.log(dog)
