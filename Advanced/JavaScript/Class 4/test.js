@@ -67,6 +67,6 @@ console.log(cube([3,4,5]));
 
 function dataPorExtenso(data){
     let opcoes = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    return data.toLocaleDateString('ar-EG', opcoes);
+    return data.toLocaleDateString('pt-PT', opcoes);
 }
-console.log(dataPorExtenso(new Date()))
+console.log(dataPorExtenso(new Date(1978,10,28)))
