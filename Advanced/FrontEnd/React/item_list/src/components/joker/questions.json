@@ -1,0 +1,74 @@
+{
+	"questions": [
+	  {
+		"question": "Who is the main protagonist of the 'Ratchet & Clank' series?",
+		"options": ["Ratchet", "Clank", "Dr. Nefarious", "Captain Qwark"],
+		"answer": "Ratchet"
+	  },
+	  {
+		"question": "What is the name of Ratchet's robot companion?",
+		"options": ["Bender", "C-3PO", "Clank", "WALL-E"],
+		"answer": "Clank"
+	  },
+	  {
+		"question": "Which evil scientist is a recurring antagonist in the series?",
+		"options": ["Dr. Eggman", "Dr. Wily", "Dr. Neo Cortex", "Dr. Nefarious"],
+		"answer": "Dr. Nefarious"
+	  },
+	  {
+		"question": "What is the name of Ratchet's signature wrench weapon?",
+		"options": ["Obliterator", "Rift Inducer", "OmniWrench", "Blaster Master"],
+		"answer": "OmniWrench"
+	  },
+	  {
+		"question": "In the series, what is Captain Qwark's occupation?",
+		"options": ["Pirate", "Superhero", "Mechanic", "Bounty Hunter"],
+		"answer": "Superhero"
+	  },
+	  {
+		"question": "What is the name of Ratchet's Lombax friend and mentor?",
+		"options": ["Max", "Talwyn", "Alister", "Angela"],
+		"answer": "Alister"
+	  },
+	  {
+		"question": "Which game introduced the character Angela Cross?",
+		"options": ["Ratchet & Clank: Up Your Arsenal", "Ratchet & Clank: Going Commando", "Ratchet & Clank: Size Matters", "Ratchet & Clank: Tools of Destruction"],
+		"answer": "Ratchet & Clank: Going Commando"
+	  },
+	  {
+		"question": "What is the name of the evil organization led by Dr. Nefarious?",
+		"options": ["The Nefarions", "The Galactic Villain Alliance", "The Protopet Corporation", "The Thugs-4-Less"],
+		"answer": "The Galactic Villain Alliance"
+	  },
+	  {
+		"question": "What is the name of the destructive creature in 'Ratchet & Clank: A Crack in Time'?",
+		"options": ["Zoni", "Terachnoids", "Groovitron", "Netherbeast"],
+		"answer": "Netherbeast"
+	  },
+	  {
+		"question": "What is the name of the evil corporation responsible for the Protopet menace in 'Ratchet & Clank: Going Commando'?",
+		"options": ["Nefarious Corp", "MegaCorp", "Protopet Inc", "EvilTech"],
+		"answer": "MegaCorp"
+	  },
+	  {
+		"question": "What is the name of Ratchet's robotic pirate companion in 'Ratchet & Clank: Quest for Booty'?",
+		"options": ["Rusty Pete", "Pirate Pete", "Blackbeard", "Captain Scallywag"],
+		"answer": "Rusty Pete"
+	  },
+	  {
+		"question": "Which game features a weapon called the 'Rift Inducer' that creates black holes?",
+		"options": ["Ratchet & Clank: Up Your Arsenal", "Ratchet & Clank: Tools of Destruction", "Ratchet & Clank: Into the Nexus", "Ratchet & Clank: Rift Apart"],
+		"answer": "Ratchet & Clank: Up Your Arsenal"
+	  },
+	  {
+		"question": "What is the name of the robotic race that kidnaps Clank in 'Ratchet & Clank: Up Your Arsenal'?",
+		"options": ["Zoni", "Cragmites", "Nanotech", "Terachnoids"],
+		"answer": "Zoni"
+	  },
+	  {
+		"question": "Which game in the series introduces the Lombax dimension-traveling character named Azimuth?",
+		"options": ["Ratchet & Clank: Size Matters", "Ratchet & Clank: Quest for Booty", "Ratchet & Clank: A Crack in Time", "Ratchet & Clank: Tools of Destruction"],
+		"answer": "Ratchet & Clank: A Crack in Time"
+	  }
+	]
+  }

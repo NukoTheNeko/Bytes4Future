@@ -1,0 +1,73 @@
+*{
+	box-sizing:content-box;
+}
+.sudokuApp{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+.board{
+	max-width: min-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: solid black 1px;
+}
+.boardRow{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.boardCell{
+	width: 72px;
+	height: 72px;
+	border: solid black 1px;
+	font-size: 52px;
+	display: flex;
+	flex-direction: row;
+	align-content:flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.guessCell{
+	width: 24px;
+	height: 24px;
+	font-size: 17px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+.cell{
+	width: 100%;
+	height: 100%;
+}
+.board :nth-child(3n)
+{
+	border-bottom: solid black 5px;
+}
+.board :nth-child(1)
+{
+	border-top: solid black 5px;
+}
+.boardRow :nth-child(3n)
+{
+	border-right: solid black 5px;
+	border-bottom: solid black 1px;
+}
+.boardRow :nth-child(1)
+{
+	border-left: solid black 5px;
+	border-top: solid black 1px;
+}
+.boardCell :nth-child(3n)
+{
+	border:none;
+}
+.boardCell :nth-child(1)
+{
+	border:none;
+}

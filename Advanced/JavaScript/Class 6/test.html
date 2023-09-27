@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "UTF-8" />
+        <title>TODOs</title>
+    </head>
+    <body>
+        <ul id="todos"></ul>
+        <input id="new-todo" name="new-todo" value="" />
+        <button id="add-button" onclick="addTodo()">Add</button>
+        <script>
+            function addTodo()
+            {
+                const todos = document.getElementById('todos')
+                const newTodoInput = document.getElementById('new-todo')
+                const newTodoText = newTodoInput.value
+                if (newTodoText === "") return
+
+                newTodoInput.value = ""
+
+                const newTodoElement = document.createElement("li")
+                newTodoElement.innerText = newTodoText
+                newTodoElement.onclick = () =>{
+                    newTodoElement.style.textDecoration = "line-through"
+                }
+                todos.appendChild(newTodoElement)
+            }
+        </script>
+    </body>
+</html>

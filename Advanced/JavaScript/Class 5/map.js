@@ -1,71 +1,75 @@
 class Mapa {
-    collection = []
-    set(key, value)
+    #map = []
+    set(chaveValor)
     {
-        let keyValue = new ChaveValor(key,value)
-        for (let i = 0; i < this.collection.length; i++)
+        for (let pair of this.#map)
         {
-            if (this.collection[i].chave === keyValue.chave)
+            if (pair.chave === chaveValor.chave)
             {
-                this.collection[i].valor  = keyValue.valor;
+                pair.valor = chaveValor.valor;
                 return;
             }
         }
-        this.collection.push(keyValue);
+        this.#map.push(chaveValor)
     }
-    get(key)
+    has(chave)
     {
-        let temp = this.collection.find(x => x.chave === key);
-        return temp ? temp.valor : undefined;
+        return this.#map.some(ele => ele.chave === chave)
     }
-    has(key)
+    get(chave)
     {
-        let temp = this.collection.find(x => x.chave === key);
-        return temp ? true : false;
+        return this.has(chave) ? this.#map.find(ele => ele.chave === chave).valor : undefined
     }
     clear()
     {
-        this.collection = []
+        this.#map = []
     }
-    delete(key)
+    delete(chave)
     {
-        for (let i = 0; i < this.collection.length; i++)
-        {
-            if (this.collection[i].chave === key)
-            {
-                this.collection.splice(i,1);
-            }
-        }
+        this.#map = this.#map.reduce((acc,ele) => ele.chave !== chave ? acc.concat([ele]) : acc, [])
     }
 }
 
 class ChaveValor {
     #chave
     #valor
-    constructor(key, value)
+
+    constructor(chave, valor)
     {
-        this.#chave = key
-        this.#valor = value
-    }
-    get valor()
-    {
-        return this.#valor;
-    }
-    set valor(value)
-    {
-        this.#valor = value;
+        this.#chave = chave
+        this.#valor = valor
     }
     get chave()
     {
-        return this.#chave;
+        return this.#chave
+    }
+    get valor()
+    {
+        return this.#valor
+    }
+    set valor(valor)
+    {
+        this.#valor = valor
     }
 }
 
+
+let chaveValor1 = new ChaveValor(1,1)
+let chaveValor2 = new ChaveValor(2,2)
+let chaveValor3 = new ChaveValor(3,3)
+let chaveValor4 = new ChaveValor(1,4)
+
 let map = new Mapa()
 
-map.set(1,2)
-console.log(map.get(1));
-map.set(1,3)
-console.log(map.get(1));
-map.set(2,2)
-console.log(map.get(2));
+map.set(chaveValor1);
+map.set(chaveValor2);
+console.log(map.has(3))
+console.log(map.get(3))
+map.set(chaveValor3);
+console.log(map.has(3))
+console.log(map.get(3))
+console.log(map.get(1))
+map.set(chaveValor4);
+console.log(map.get(1))
+map.delete(5);
+console.log(map.get(3))

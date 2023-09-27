@@ -1,0 +1,32 @@
+.wrapper{
+	display: flex;
+	align-items: flex-end;
+	text-align: center;
+	justify-content: center;
+	font-size: 160px; 
+	font-family: "Pixel";
+}
+.displayText{
+	font-family: "Pixel";
+	font-size: 160px;
+	border: none;
+	width: 250px;
+	height: 160px;
+	background-color: transparent;
+}
+
+.miniText{
+	position: relative;
+	bottom: 10px;
+	font-size: 40px; 
+}
+.over{
+	color: rgb(121, 20, 20);
+}
+.editing {
+	color: rgb(25, 49, 16)
+}
+@font-face {
+	font-family: "Pixel";   /*Can be any text*/
+	src: url("../timer_art/Pixel.ttf") format("truetype");
+  }
