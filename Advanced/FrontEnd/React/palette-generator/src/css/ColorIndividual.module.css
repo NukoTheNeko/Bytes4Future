@@ -1,0 +1,14 @@
+.colorContainer{
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.colorText{
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	text-align: center;
+	margin-block: 0px;
+}

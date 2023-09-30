@@ -127,3 +127,4 @@ function calculaDiasAteAoNatal(dia, mes){
     }
     return `Faltam ${days} dias até ao Natal.`
 }
+
