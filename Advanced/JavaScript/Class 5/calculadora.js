@@ -112,3 +112,45 @@ if(b)
     }
 }
 console.log((a=b)&&(b=c))
+
+
+
+
+class Calculadora2 {
+    #ops = new Map([
+        ["soma",(a,b) => a + b],
+        ["subtração",(a,b) => a - b],
+        ["multiplicação",(a,b) => a * b],
+        ["divisão",(a,b) => a / b]
+    ])
+    constructor()
+    {
+        this.historico = []
+    }
+
+    applyOp(op, a, b)
+    {
+        let resultado = this.#ops.get(op)(a,b);
+        this.historico.push({
+            operacao:op,
+            a:a,
+            b:b,
+            resultado:resultado
+        })
+        return resultado
+    }
+
+    somar (a,b){return this.applyOp("soma", a, b)}
+    subtrair (a,b){return this.applyOp("subtração", a, b)}
+    multiplicar (a,b){return this.applyOp("multiplicação", a, b)}
+    dividir (a,b){return this.applyOp("divisão", a, b)}
+
+    lerHistorico(operacao)
+    {
+        if(operacao)
+        {
+            return this.historico.filter(ele => ele.operacao === operacao)
+        }
+        return this.historico
+    }
+}

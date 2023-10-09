@@ -1,0 +1,23 @@
+{
+	"Accept": "*/*",
+	"Accept-Encoding": "gzip, deflate, br",
+	"Accept-Language": "en-US,en;q=0.5",
+	"Alt-Used": "music.youtube.com",
+	"Authorization": "SAPISIDHASH 1696417873_803368479fb155e9c26485733899edc0a9419a99",
+	"Connection": "keep-alive",
+	"Content-Length": "3396",
+	"Content-Type": "application/json",
+	"Cookie": "CONSENT=PENDING+564; SOCS=CAISNQgREitib3FfaWRlbnRpdHlmcm9udGVuZHVpc2VydmVyXzIwMjMwOTI2LjA1X3AwGgJlbiACGgYIgNbyqAY; YSC=Ngjk2woxG2M; VISITOR_INFO1_LIVE=fG1oP7vAxQQ; VISITOR_PRIVACY_METADATA=CgJQVBICEgA%3D; _gcl_au=1.1.1380556028.1696417826; __Secure-1PSIDTS=sidts-CjEB3e41hTRS1E9Ki2UfhQATy9GHyUinW9dCTdiLzfrozrnXBnl9Wm2uJEi4L8rrFXNUEAA; __Secure-3PSIDTS=sidts-CjEB3e41hTRS1E9Ki2UfhQATy9GHyUinW9dCTdiLzfrozrnXBnl9Wm2uJEi4L8rrFXNUEAA; HSID=AMkHLciL7VdaThwx-; SSID=A_rBa3NW_LkaqvPqI; APISID=o84-wysafTJeBFnt/ArwCej7m4N8e1CKZ_; SAPISID=KM6_DVsjW2jhO1VI/AtE_IfV4RAa9vW7CR; __Secure-1PAPISID=KM6_DVsjW2jhO1VI/AtE_IfV4RAa9vW7CR; __Secure-3PAPISID=KM6_DVsjW2jhO1VI/AtE_IfV4RAa9vW7CR; SID=bgjs8dQzB6fJvvoQRbdmuC1qyn7Bq2gnduYmg6XIBsXwSoxFEkad1ZD5PeLQIFa6hvvdSw.; __Secure-1PSID=bgjs8dQzB6fJvvoQRbdmuC1qyn7Bq2gnduYmg6XIBsXwSoxFN7rZiIIf-s0zydSmOTtdNg.; __Secure-3PSID=bgjs8dQzB6fJvvoQRbdmuC1qyn7Bq2gnduYmg6XIBsXwSoxFp20EFrQZlMFDwOUr32TO5g.; LOGIN_INFO=AFmmF2swRgIhAJ72JiKGYA86OKWb9Rvk66QpIQMMf3z4k0BRydvkDkjNAiEApfBagLVcPOpO_iVK3D2C1ifjguXnJCGO9z9eRQrgBDo:QUQ3MjNmeUVXU29vV1dZR3FSQUxLeGZhSl95QjJKWmZ6cGpzUXZtbW1RaWlUclRHVHBXUUNkcDVOOFJIMXI0WE9HdnlwWXFEVWhnOFhvZklFbjNnbHp2bXViNzk0WWtEOTZDMGRfdk13emQtQUtodzd5clg3Yy1iQWN0OWxJbGR1ZF9oYm1QLThBN0RMZzZYVU83VjEybnFZSHZaWlEtbFRTSDV1bWE4bG5BQkEwa1FlSngyMFR5cTlhUVp0YzVZOWk4blRjNDBoRUVkYnMwRHdwMDVsQ3AyX3ZCTWVWVnJNUQ==; SIDCC=ACA-OxPxR18ol-mm-ZC14JiUvxz_zrzlQXfVh39wiUOOR1ZEAP1w9B5hMXm4eb2IDFEVEsk5; __Secure-1PSIDCC=ACA-OxOTqjxpHitDvZS46xc6M7ElC1cu45EaLZ0OagHbjo7zPJaJSqMd5_OhX1ifDbtMe_rF; __Secure-3PSIDCC=ACA-OxPTeZHy_9I_ejOjqoKeabyDAZFkCCcHZHbXtpKnZMf7_NeS2uXe9oEaiXKipVSPdVPh_A",
+	"Host": "music.youtube.com",
+	"Origin": "https://music.youtube.com",
+	"Referer": "https://music.youtube.com/",
+	"TE": "Trailers",
+	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0",
+	"X-Goog-AuthUser": "0",
+	"X-Goog-PageId": "100196038931132688821",
+	"X-Goog-Visitor-Id": "CgtmRzFvUDd2QXhRUSi_kPWoBjIICgJQVBICEgA%3D",
+	"X-Origin": "https://music.youtube.com",
+	"X-Youtube-Bootstrap-Logged-In": "true",
+	"X-Youtube-Client-Name": "67",
+	"X-Youtube-Client-Version": "1.20230927.00.01"
+}

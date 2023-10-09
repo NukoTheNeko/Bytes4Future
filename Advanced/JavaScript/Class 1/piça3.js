@@ -107,3 +107,12 @@ function diaEmPalavras(dia, mes, ano){
 }
 
 console.log(diaEmPalavras(3,3,2000))
+
+function contaInteirosDoArray(array){
+    if (array.length == 1)
+    {
+        return Number.isInteger(array[0]) ? 1 : 0
+    }
+    return Number.isInteger(array[0]) ? 1 : 0 + contaInteirosDoArray(array.slice(1))
+}
+console.log(contaInteirosDoArray([3, 3.1, 32, 2.4]))

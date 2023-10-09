@@ -128,3 +128,59 @@ function calculaDiasAteAoNatal(dia, mes){
     return `Faltam ${days} dias até ao Natal.`
 }
 
+/*function verificaPangrama(string) {
+    const todas = "abcdefghijlmnopqrstuvxz"
+    const minusculas = string.toLowerCase()
+
+    return todas.every(l => minusculas.includes(l))
+}
+
+console.log(verificaPangrama("AOECISTBVNWIXEABQEOWOQWERTYUIOPLKJHGFDSAZXCVBNM"))*/
+
+function calculaAreaSuperficiePiramidePentagonal(ladodabase, altura) {
+    if (ladodabase< 0 || altura < 0)
+    {
+        return "Por favor introduza valores positivos."
+    }
+    return Math.round((5/4) * Math.tan(54 * (Math.PI / 180))*ladodabase**2+5*(ladodabase/2)*Math.sqrt(altura ** 2 + (ladodabase*Math.tan(54 * (Math.PI / 180))/2)**2))
+}
+console.log(calculaAreaSuperficiePiramidePentagonal(324,10))
+
+function calculaForcaDaPassword(string) {
+    const TESTS = [
+        (pass) => {return pass.length >= 8 ? 1 : 0},
+        (pass) => {return /\d/.test(pass) ? 1 : 0},
+        (pass) => {return /[A-Z]/.test(pass) ? 1 : 0}
+    ]
+    return string === "" ? "Por favor introduza uma password válida." : TESTS.reduce((acc,ele) => acc += ele(string),0)
+}
+
+
+const heapsort = arr => {
+    const a = [...arr];
+    let l = a.length;
+
+    const heapify = (a,i)=>{
+        const left = 2 * i +1;
+        const right = 2 * i +2;
+        let max = i;
+        if(left< l && a[left] > a[max]) max = left;
+        if(right< l && a[right] > a[max]) max = right;
+        if(max !== i)
+        {
+            [a[max], a[i]] = [a[i], a[max]] ;
+            heapify(a,max);
+        }
+    };
+
+    for (let i = Math.floor(l/2); i >= 0; i-=1) heapify(a,i);
+    for ( i = a.length-1; i > 0; i--)
+    {
+        [a[0], a[i]] = [a[i], a[0]] ;
+        l--;
+        heapify(a,0);
+    }
+    return a
+}
+
+console.log(heapsort([3,7,2,8]))

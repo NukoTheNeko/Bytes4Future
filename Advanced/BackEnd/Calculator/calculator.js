@@ -17,8 +17,7 @@ function validate(req, res, next) {
 		next()
 	}
 }
-app.post('/op/:op', validate)
-app.post('/op/:op', (req, res) => {
+app.post('/op/:op', validate, (req, res) => {
 	let { a, b } = req.body;
 	let obj = {}
 	switch (req.params.op) {
@@ -61,8 +60,7 @@ function validateSingle(req, res, next) {
 		next()
 	}
 }
-app.post('/repetir', validateSingle)
-app.post('/repetir', (req, res) => {
+app.post('/repetir', validateSingle, (req, res) => {
 	res.status(200).json({ calculadora: calculator.operate(lastOperator, req.body.num) })
 })
 

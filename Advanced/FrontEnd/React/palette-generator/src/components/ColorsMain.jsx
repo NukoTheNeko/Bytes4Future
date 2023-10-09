@@ -2,56 +2,38 @@ import {useEffect, useState} from 'react';
 import ColorIndividual from './ColorIndividual';
 import styles from '../css/ColorsMain.module.css'
 
-
-const COLOR_COUNT = 5;
-
 export default function ColorsMain()
 {
 	const [colorsState, setColorsState] = useState([])
 	const [displayState, setDisplayState] = useState("hex")
-	
-	const getRandomColor = () => {
-		return ('#' + (Math.floor(Math.random() * 0xFFFFFF)).toString(16).padStart(6, 0));
-	}
 
-	const generateColors = (prev) => {
-		let newColors = new Array(COLOR_COUNT).fill("").map(ele => ({color: getRandomColor(), locked: false}))
-		if (prev)
-		{
-			newColors = prev.map(ele => ({color: (ele.locked ? ele.color : getRandomColor()), locked: ele.locked}))
-		}
-		localStorage.setItem('colors', JSON.stringify(newColors));
-		return newColors
-	}
-	
-	
+	const myHeaders = new Headers();
+	myHeaders.append("Accept", "application/json");
 	
 	const lock = (index) => {
-		let newColors = colorsState.map((ele, i) => ({color: ele.color, locked: index === i ? !ele.locked : ele.locked}))
-		localStorage.setItem('colors', JSON.stringify(newColors));
-		setColorsState(newColors)
+		sendRequest("PATCH", `/block/${index}`)
+	}
+
+	async function sendRequest(fetchMethod, link) {
+		try 
+		{
+			const response = await fetch("/api/palette" + link, {method: fetchMethod, headers: myHeaders});
+			const jsonColors = await response.json();
+			setColorsState(jsonColors.colors)
+		}
+		catch (err)
+		{
+			console.log(err)
+		}
 	}
 
 	useEffect(()=> {
-		let data = localStorage.getItem('colors')
-		if (!data)
-		{
-			setColorsState(generateColors());
-		}
-		else
-		{
-			setColorsState(JSON.parse(data))
-		}
-
+		sendRequest("GET", "")
 		const useSpace = (e) => {
 			e.preventDefault()
 			if(e.keyCode === 32)
 			{
-				setColorsState(prev => generateColors(prev));
-			}
-			if(e.key === 'c')
-			{
-				localStorage.clear();
+				sendRequest("GET", `/generate`)
 			}
 		}
 		document.addEventListener('keydown',useSpace, true)
